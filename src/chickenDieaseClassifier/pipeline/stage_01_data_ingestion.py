@@ -1,4 +1,4 @@
-from chickenDieaseClassifier.config.configuration import CongigurationManager
+from chickenDieaseClassifier.config.configuration import ConfigurationManager
 from chickenDieaseClassifier.components.data_ingestion import DataIngestion
 from chickenDieaseClassifier import logger
 
@@ -10,7 +10,7 @@ class DataIngestionPipeline:
         pass
 
     def main(self):
-        config = CongigurationManager()
+        config = ConfigurationManager()
         data_inegstion_config = config.get_data_ingestion_configuration()
         data_ingestion = DataIngestion(config=data_inegstion_config)
         data_ingestion.download_file()
