@@ -2,7 +2,7 @@ from chickenDieaseClassifier.config.configuration import CongigurationManager
 from chickenDieaseClassifier.components.data_ingestion import DataIngestion
 from chickenDieaseClassifier import logger
 
-STAGE_NAME = "Data Ingestion stage"
+STAGE_NAME = "Data Ingestion"
 
 
 class DataIngestionPipeline:
