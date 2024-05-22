@@ -1,4 +1,4 @@
-from chickenDieaseClassifier.config.configuration import CongigurationManager
+from chickenDieaseClassifier.config.configuration import ConfigurationManager
 from chickenDieaseClassifier.components.prepare_base_model import PrepareBaseModel
 from chickenDieaseClassifier import logger
 
@@ -10,7 +10,7 @@ class PrepareBaseModelPipeline:
         pass
 
     def main(self):
-        config = CongigurationManager()
+        config = ConfigurationManager()
         prepare_base_mode_config = config.get_prepare_base_model_config()
         prepare_base_model = PrepareBaseModel(config=prepare_base_mode_config)
         prepare_base_model.get_base_model()
