@@ -1,7 +1,7 @@
 import os
 import time
 import tensorflow as tf
-from chickenDieaseClassifier.config.configuration import PrepareCallbacksConfig
+from chickenDieaseClassifier.entity.config_entity import PrepareCallbacksConfig
 
 
 class PrepareCallBacks:
