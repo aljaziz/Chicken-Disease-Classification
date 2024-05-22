@@ -1,4 +1,4 @@
-from chickenDieaseClassifier.config.configuration import PrepareBaseModelConfig
+from chickenDieaseClassifier.entity.config_entity import PrepareBaseModelConfig
 import tensorflow as tf
 from pathlib import Path
 
